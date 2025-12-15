@@ -1,0 +1,57 @@
+{
+  "webhook_url": "YOUR_GOOGLE_SHEETS_WEBHOOK_URL_HERE",
+  "platforms": [
+    "facebook",
+    "olx_webstore"
+  ],
+  "auto_message": true,
+  "message_delay": 2,
+  "headless_mode": false,
+  "owner_patterns": [
+    "aap khud chalate ho?",
+    "Direct owner?",
+    "Owner driving?",
+    "khud use karte ho?",
+    "personal use?"
+  ],
+  "dealer_patterns": [
+    "Dealer ho ya owner?",
+    "Business h ya apni?",
+    "dealer",
+    "showroom",
+    "business"
+  ],
+  "extraction_settings": {
+    "facebook": {
+      "enabled": true,
+      "max_listings": 20,
+      "wait_timeout": 10
+    },
+    "olx_webstore": {
+      "enabled": true,
+      "max_listings": 20,
+      "wait_timeout": 10
+    }
+  },
+  "sheet_columns": [
+    "DATE",
+    "NAME",
+    "MOBILE",
+    "REG_NO",
+    "CAR_MODEL",
+    "VARIANT",
+    "YEAR",
+    "KM",
+    "ADDRESS",
+    "FOLLOW_UP",
+    "SOURCE",
+    "CONTEXT",
+    "LICENSE",
+    "REMARK"
+  ],
+  "logging": {
+    "level": "INFO",
+    "file": "agent.log",
+    "max_size_mb": 10
+  }
+}
